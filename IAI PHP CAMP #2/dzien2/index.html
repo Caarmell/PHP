@@ -1,0 +1,64 @@
+<html>
+<head>
+	<meta charset="utf-8"/>
+</head>
+<body>
+
+<h2>Formularz - dodanie klienta</h2>
+
+<form action="aplikacja_bazodanowa.php" method="POST">
+		<table>
+				<tr>
+					<td><label> IMIE </label><br/><br/></td>
+					<td><input style="width:300px" name="imie" required="required"><br/><br/></td>
+				</tr>
+				<tr>
+					<td><label> NAZWISKO </label><br/><br/></td>
+					<td><input style="width:300px" name="nazwisko" required="required"><br/><br/></td>
+					
+				</tr>
+				<tr>
+					<td><label> PŁEĆ </label><br/><br/></td>
+					<td>
+						<select name="plec">
+							<option>FEMALE</option>
+							<option>MALE</option>
+							<option>UNKNOWN</option>
+						</select><br/><br/>
+					</td>
+				</tr>
+				<tr>
+					<td><label> DATA URODZENIA: </label><br/><br/></td>
+					<td><input style="width:300px" name="data" required="required"><br/><br/></td>
+				</tr>
+				<tr>
+					<td><label> LICZBA ZAMÓWIEŃ </label><br/><br/></td>
+					<td><input style="width:300px" name="liczbazam"><br/><br/></td>
+				</tr>
+				<tr>
+					<td><label> ULICA </label><br/><br/></td>
+					<td><textarea rows="2" cols="40" name="ulica" required="required"></textarea><br/><br/></td>
+				</tr>
+				<tr>
+					<td><label> MIASTO </label><br/><br/></td>
+					<td><input style="width:300px" name="miasto" required="required"><br/><br/></td>
+				</tr>
+				<tr>
+					<td><label> KOD POCZTOWY </label><br/><br/></td>
+					<td><input style="width:300px" name="kod" required="required"><br/><br/></td>
+				</tr>
+				<tr>
+					<td><label> PAŃSTWO</label><br/><br/></td>
+					<td><input style="width:300px" name="panstwo"><br/><br/></td>
+				</tr>
+				<tr>
+					<td><label> NOTATKI </label><br/><br/></td>
+					<td><textarea rows="2" cols="40" name="notki"></textarea><br/><br/></td>
+				</tr>
+				<tr>
+					<td><td><input type="submit" id="button" name="loguj" value="ZALOGUJ"></td></td>
+				</tr>
+		</table>
+	</form>
+</body>
+</html>

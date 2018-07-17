@@ -1,0 +1,4 @@
+// co do poprawy
+1. id przy edycji - zawsze bierze ostatnie z danej strony
+2. kolor dla edytowanego pola
+3. wyglad buttonow 

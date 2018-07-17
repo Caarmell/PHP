@@ -1,0 +1,22 @@
+zadanie 1
+Wybrać wszystkich mężczyzn urodzonych po 1999 roku (582)
+
+select * from clients where gender ='male' and year(date_of_birth) > 1999
+
+Zliczyć ilość klientów każdej płci jednym zapytaniem (male - 1627, female -1641, unknown - 1732)
+
+select gender, count(*) from clients group by gender;
+
+Wybrać osobę z największą liczbą zamówień jednym zapytaniem (id = 978019)
+
+select id from clients order by orders_count desc limit 1
+select id from clients where orders_count in (select max(orders_count) from clients);
+
+
+Wybrać wszystkich których imię lub nazwisko zaczyna się od litery "T" (434)
+
+select * from clients where name like "T%" or surname like "T%";
+
+Zliczyć jednym zapytaniem wszystkie miasta (1284)
+
+select count(DISTINCT  city) as liczba from clients
